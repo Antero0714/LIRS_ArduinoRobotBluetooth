@@ -69,49 +69,42 @@ void loop()
     }
 }
 
-void forward() 
-{
-    // Оба мотора вращаются вперёд
-    digitalWrite(IN1, HIGH);
-    digitalWrite(IN2, LOW);
-    digitalWrite(IN3, HIGH);
-    digitalWrite(IN4, LOW);
-    analogWrite(enA, robot_speed);
-    analogWrite(enB, robot_speed);
+void right() {
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  analogWrite(enA, robot_speed);
+  analogWrite(enB, robot_speed);
 }
 
-void backward() 
-{
-    // Оба мотора вращаются назад
-    digitalWrite(IN1, LOW);
-    digitalWrite(IN2, HIGH);
-    digitalWrite(IN3, LOW);
-    digitalWrite(IN4, HIGH);
-    analogWrite(enA, robot_speed);
-    analogWrite(enB, robot_speed);
+void left() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+  analogWrite(enA, robot_speed);
+  analogWrite(enB, robot_speed);
 }
 
-void left() 
-{
-    // Левый мотор назад, правый вперёд -> поворот влево
-    digitalWrite(IN1, LOW);
-    digitalWrite(IN2, HIGH);
-    digitalWrite(IN3, HIGH);
-    digitalWrite(IN4, LOW);
-    analogWrite(enA, robot_speed);
-    analogWrite(enB, robot_speed);
+void backward() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  analogWrite(enA, robot_speed);
+  analogWrite(enB, robot_speed);
 }
 
-void right() 
-{
-    // Левый мотор вперёд, правый назад -> поворот вправо
-    digitalWrite(IN1, HIGH);
-    digitalWrite(IN2, LOW);
-    digitalWrite(IN3, LOW);
-    digitalWrite(IN4, HIGH);
-    analogWrite(enA, robot_speed);
-    analogWrite(enB, robot_speed);
+void forward() {
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+  analogWrite(enA, robot_speed);
+  analogWrite(enB, robot_speed);
 }
+
 
 void robot_stop() 
 {
