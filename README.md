@@ -3,7 +3,7 @@
 
 
 ## 📱 Приложение App Inventor
-<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/78cefe67-a76b-4ffc-86bd-0097fc16275f" />
+<img width="576" height="1080" alt="image" src="https://github.com/user-attachments/assets/78cefe67-a76b-4ffc-86bd-0097fc16275f" />
 
 
 Интерфейс приложения с кнопками:
